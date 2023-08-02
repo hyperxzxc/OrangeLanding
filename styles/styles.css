@@ -1,0 +1,426 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 425px) {
+
+    .header_container {
+        background: #F8765E;
+        font-weight: 900;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_title {
+        font-size: 26px;
+        font-style: normal;
+        line-height: 58px;
+        color: #FFFFFF;
+        padding: 25px 136px;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .header_menu {
+        font-size: 17px;
+        line-height: 188.235%;
+        display: flex;
+        height: 100%;
+        padding: 0 51px;
+        align-items: start;
+        font-style: normal;
+        flex-direction: row;
+    }
+
+    .header_menu_first {
+    }
+
+    .header_menu_second {
+        padding: 0 34.5px;
+    }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone_img {
+
+        display: flex;
+        justify-content: center;
+        padding: 106px 0 0 45px;
+    }
+
+    .main_first_text {
+        display: flex;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133.333%;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        padding: 55px 30px 0 30px;
+        text-align: center;
+    }
+
+    .main_second_text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 200%;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        padding: 15px 30px 0 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .email_form_block {
+        display: flex;
+
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.30) inset;
+        padding: 16px 20px 16px 20px;
+        margin: 30px 20px 0 20px;
+    }
+
+    .email_form {
+        color: #CDCDCD;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        align-items: center;
+    }
+
+    .button_container {
+        justify-content: center;
+        display: flex;
+        border-radius: 20px;
+        background: #9BDBE7;
+        color: #FFF;
+        margin: 27px 104px 140px 103px;
+    }
+
+    .button_subscribe {
+        padding: 18px 17px 17px 18px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%; /*  */
+
+    }
+
+    .main_container_content_first {
+        display: flex;
+        flex-direction: column;
+        background: #F8765E;
+        z-index: 1;
+    }
+
+    .main_container_content_second {
+        z-index: 1;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first_block {
+        z-index: 2;
+        position: relative;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 10px 34px 0px rgba(210, 210, 210, 0.45);
+        margin: 0 20px 0 20px;
+        bottom: 64px;
+    }
+
+    .image_first {
+        padding: 60px 60px 0 67px;
+    }
+
+    .first_block_title {
+
+        display: flex;
+        color: #031D5B;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 138.889%; /*  */
+        padding: 41px 15px 0 20px;
+    }
+
+    .first_block_dec {
+        background: #F8765E;
+        margin: 17px 0 0 22px;
+        width: 60px;
+        height: 5px;
+    }
+
+    .first_block_first_text {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 200%; /* 200% */
+        padding: 37px 13px 0 22px;
+        color: #5B6C94;
+    }
+
+    .image_second {
+        padding: 60px 0 0 50px;
+    }
+
+    .eclipse {
+        margin: 30px 0 0 0;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        background: #F8765E;
+    }
+
+    .footer_container {
+        background: #F8765E;
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 117.647%;
+        justify-content: center;
+    }
+
+    .corp {
+        padding: 40px 55px 0 55px;
+    }
+
+    .footer_text {
+        display: flex;
+        padding: 20px 26px 52px 27px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header_container{
+        background: #F8765E;
+        font-weight: 900;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .header_title{
+        display: flex;
+        font-size: 26px;
+        font-style: normal;
+        line-height: 223.077%;
+        color: #FFFFFF;
+        padding: 25px 0 18px 120px;
+        height: 100%;
+    }
+
+    .header_menu{
+        font-size:17px;
+        line-height: 188.235%;
+        display: flex;
+        height: 100%;
+        padding: 0 823px;
+    }
+
+    .header_menu_first{
+    }
+
+    .header_menu_second{
+        padding:0 34.5px;
+    }
+
+    .main_container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .phone_img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: end;
+        padding: 154px 52px 0 0;
+    }
+
+    .main_first_text{
+        display: flex;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133.333%;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        padding: 55px 30px 0 30px;
+        text-align: center;
+    }
+
+    .main_second_text{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 200%;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        padding: 15px 30px 0 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .email_form_block{
+        display: flex;
+
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.30) inset;
+        padding: 16px 20px 16px 20px;
+        margin: 30px 20px 0 20px;
+    }
+
+    .email_form{
+        color: #CDCDCD;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        align-items: center;
+    }
+
+    .button_container{
+        justify-content: center;
+        display: flex;
+        border-radius: 20px;
+        background: #9BDBE7;
+        color: #FFF;
+        margin: 27px 104px 140px 103px;
+    }
+
+    .button_subscribe{
+        padding: 18px 17px 17px 18px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%; /*  */
+
+    }
+
+    .main_container_content_first{
+        background: #F8765E;
+        z-index: 1;
+    }
+
+    .main_container_content_second{
+        display: none;
+    }
+    .footer_container{
+        display: none;
+    }
+}
